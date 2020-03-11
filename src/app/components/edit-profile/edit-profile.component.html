@@ -1,0 +1,20 @@
+<ion-card id="profile-card">
+  <ion-card-header>
+    <ion-card-subtitle>Update Profile</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input [(ngModel)]="newUserProfileData.name" #profileName></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">About</ion-label>
+      <ion-textarea [(ngModel)]="newUserProfileData.about"></ion-textarea>
+    </ion-item>
+
+    <ion-button size="small" (click)="cancelEditProfileAction()" color='danger'>Cancel</ion-button>
+    <ion-button size="small" (click)="updateProfileAction()" color="success">Save</ion-button>
+
+  </ion-card-content>
+</ion-card>

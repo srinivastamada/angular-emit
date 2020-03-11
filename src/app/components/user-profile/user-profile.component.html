@@ -1,0 +1,11 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Profile</ion-card-subtitle>
+    <ion-card-title [innerHTML]="userProfile.name"></ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <p [innerHTML]="userProfile.about"></p>
+    <ion-button size="small" (click)="editProfileAction()">Edit</ion-button>
+  </ion-card-content>
+</ion-card>
