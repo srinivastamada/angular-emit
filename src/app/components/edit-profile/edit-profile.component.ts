@@ -7,7 +7,7 @@ import { IonInput } from '@ionic/angular';
   styleUrls: ['./edit-profile.component.scss']
 })
 export class EditProfileComponent implements AfterViewInit {
-  @ViewChild('profileName') inputElement: IonInput;
+  @ViewChild('profileName', {static: true}) inputElement: IonInput;
   @Output() cancelEditProfile = new EventEmitter();
   @Output() updateProfileData = new EventEmitter<any>();
   public newUserProfileData = {
